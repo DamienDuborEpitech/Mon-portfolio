@@ -1,0 +1,213 @@
+body {
+  width: 100%;
+  height: 100%;
+
+  background: #000000;
+  --gap: 5em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.2);
+
+  background-image: linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
+  z-index: 1;
+}
+
+
+
+#boxContact{
+  display: flex;
+  justify-content: center;
+}
+
+#boxContact button:hover{
+  color: #f8d66d;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.form .title {
+  color: #6d28d9;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  outline: 0;
+  border: 1px solid rgb(219, 213, 213);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+  align-self: flex-end;
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #6d28d9;
+  color: #e9d5ff;
+  cursor: pointer;
+}
+
+
+
+/*NAV : */
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 140%;
+  background: linear-gradient(90deg, #3b0764, #6d28d9);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 0.8em 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e9d5ff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #f8d66d;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+
+
+@media (max-width: 1024px) {
+  nav ul {
+    display: flex;            
+    list-style: none;
+    flex-direction: row;    
+    justify-content: space-evenly;  
+    flex-wrap: wrap;
+    font-size: 150%;
+    background: linear-gradient(90deg, #3b0764, #6d28d9);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: black;
+  }
+}
+
+
+/*FIN NAV */
+
+
+
+/*POUR LES BOUTONS JE ME SUIS INSPIRE DE Uiverse.io */
+
+
+/* Bouton or avec glow */
+
+#boxButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.boutonsJaune {
+  --glow-color: #f8d66d;
+  --glow-spread-color: rgba(248, 214, 109, 0.4);
+  --enhanced-glow-color: #fff2b3;
+  --btn-color: #f8d66d;
+
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: #1a1a1a;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow:
+    0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--enhanced-glow-color);
+  transition: all 0.3s;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.boutonsJaune:hover {
+  background-color: #fff0b2;
+  color: #1a1a1a;
+  transform: scale(1.05);
+}
+
+
+/*Fin bouton or*/
+
+
+
+
+
+/*DEBUT FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  background: linear-gradient(90deg, #3b0764, #6d28d9);
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+footer img {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s, filter 0.3s;
+  filter: brightness(0.9);
+}
+
+footer img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.3);
+}
+
+/*FIN FOOTER */

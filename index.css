@@ -1,0 +1,265 @@
+body {
+  width: 100%;
+  height: 100%;
+
+  background: #000000;
+  --gap: 5em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.2);
+
+  background-image: linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
+  z-index: 1;
+}
+
+/*NAV : */
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 140%;
+  background: linear-gradient(90deg, #3b0764, #6d28d9);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 0.8em 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e9d5ff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #f8d66d;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+
+
+@media (max-width: 1024px) {
+  nav ul {
+    display: flex;            
+    list-style: none;
+    flex-direction: row;    
+    justify-content: space-evenly;  
+    flex-wrap: wrap;
+    font-size: 150%;
+    background: linear-gradient(90deg, #3b0764, #6d28d9);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: black;
+  }
+}
+
+
+/*FIN NAV */
+
+
+#BoxPlay{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+
+
+
+/*POUR LES BOUTONS JE ME SUIS INSPIRE DE Uiverse.io */
+
+
+/* Bouton or avec glow */
+
+#boxButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+.boutonsJaune {
+  --glow-color: #f8d66d;
+  --glow-spread-color: rgba(248, 214, 109, 0.4);
+  --enhanced-glow-color: #fff2b3;
+  --btn-color: #f8d66d;
+
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: #1a1a1a;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow:
+    0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--enhanced-glow-color);
+  transition: all 0.3s;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.boutonsJaune:hover {
+  background-color: #fff0b2;
+  color: #1a1a1a;
+  transform: scale(1.05);
+}
+
+
+/*Fin bouton or*/
+
+
+/*Bouton violet */
+
+
+.boutonViolet {
+  --glow-color: #a78bfa;
+  --glow-spread-color: rgba(167, 139, 250, 0.4);
+  --btn-color: #5b21b6;
+
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: #f1f1f1;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow:
+    0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  transition: all 0.3s;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.boutonViolet:hover {
+  background-color: #a78bfa;
+  color: #1a1a1a;
+  transform: scale(1.05);
+}
+
+
+
+/*Fin bouton violet */
+
+
+
+
+
+
+
+#box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  
+}
+
+#boxBoutonPlusVite{
+  grid-column: 3;
+  grid-row: 3;
+}
+
+#boxBoutonMoinsVite{
+  grid-column: 3;
+  grid-row: 4;
+}
+
+#sousBoite{
+  grid-column: 2/3;
+  grid-row: 2 / 7;
+  /*border: solid;*/
+  /*border-width: 20px;*/
+  /*border-color: rgb(200, 200, 200);*/
+  overflow: hidden;
+  z-index: 2;
+}
+
+#sousBoite p{
+  text-align: center;
+  font-size: 1cqw;
+  color: rgb(255, 204, 0);
+  font-family: 'Playfair Display', serif;
+  z-index: 3;
+}
+
+
+@media (max-width: 1024px) {
+  #sousBoite {
+    grid-column: 1 / 5;
+    grid-row: 2 / 7;
+    /*border: solid;
+    border-width: 20px;*/
+    /*border-color: rgb(200, 200, 200);*/
+    font-family: 'Playfair Display', serif;
+    overflow: hidden;
+  }
+  #sousBoite p{
+    text-align: center;
+    font-size: 4cqw;
+    color: rgb(255, 204, 0);
+  }
+  #boxBoutonPlusVite{
+    grid-column: 1;
+    grid-row: 7;
+  }
+  #boxBoutonMoinsVite{
+    grid-column: 3;
+    grid-row: 7;
+  }
+
+
+}
+
+/*DEBUT FOOTER */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  background: linear-gradient(90deg, #3b0764, #6d28d9);
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+footer img {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s, filter 0.3s;
+  filter: brightness(0.9);
+}
+
+footer img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.3);
+}
+
+/*FIN FOOTER */
+
+
+
+
+
+
+
+
+
