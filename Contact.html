@@ -15,15 +15,27 @@
             </ul>
         </nav>
 
+        <div id="boxForm">
+            <div class="form-container">
+                <form class="form">
+                    <div class="form-group">
+                    <label for="nom">Votre nom</label>
+                    <input type="text" id="nom" name="nom" required="">
+                    </div>
+                    <div class="form-group">
+                    <label for="email">Votre email</label>
+                    <input type="text" id="email" name="email" required="">
+                    </div>
+                    <div class="form-group">
+                    <label for="message">Votre message</label>
+                    <textarea name="textarea" id="message" rows="10" cols="50" required=""></textarea>
+                    </div>
+                    <button type="button" class="form-submit-btn" onclick="sendMail()">Envoyer</button>
 
-        <div id="boxContact">
-            <form class="form">
-                <div class="title">Me contacter</div>
-                <input type="text" placeholder="Ton email" class="input">
-                <textarea placeholder="Ton message"></textarea>
-                <button>Submit</button>
-            </form>
+                </form>
+            </div>
         </div>
+        
         
 
         <br>
@@ -31,6 +43,16 @@
         <div id="boxButton">
             <button onclick="window.location.href='mesProjets.html'" class="boutonsJaune">Précédent</button>
         </div>
+
+        <script src="contact.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "NZdbd4VWv6G7ie_eF",
+                });
+            })();
+        </script>
 
     </body>
 

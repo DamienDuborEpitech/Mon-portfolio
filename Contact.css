@@ -1,8 +1,8 @@
-body {
+/*body {
   width: 100%;
   height: 100%;
 
-  background: #000000;
+  background: #b42929;
   --gap: 5em;
   --line: 1px;
   --color: rgba(255, 255, 255, 0.2);
@@ -21,74 +21,124 @@ body {
     );
   background-size: var(--gap) var(--gap);
   z-index: 1;
+}*/
+
+body{
+  background-color: #F4E1D2;
+  
 }
 
-
-
-#boxContact{
+#boxForm{
   display: flex;
-  justify-content: center;
+  justify-content: center;   /* centre horizontalement */
+  align-items: center;       /* centre verticalement */
+  flex-direction: column;    /* garde la nav et le footer empilés verticalement */
 }
 
-#boxContact button:hover{
-  color: #f8d66d;
+
+
+/* From Uiverse.io by gharsh11032000 */ 
+.form-container {
+  width: 400px;
+  background: #6A1B1B;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  align-items: center;
+
 }
 
-.form {
-  position: relative;
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #6A1B1B;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #6A1B1B;
+}
+
+.form-container .form-submit-btn {
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
-  gap: 10px;
-  width: 500px;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
-}
-
-.form .title {
-  color: #6d28d9;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: -1px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-.form input {
-  outline: 0;
-  border: 1px solid rgb(219, 213, 213);
-  padding: 8px 14px;
-  border-radius: 8px;
-  width: 100%;
-  height: 50px;
-}
-
-.form textarea {
-  border-radius: 8px;
-  height: 100px;
-  width: 100%;
-  resize: none;
-  outline: 0;
-  padding: 8px 14px;
-  border: 1px solid rgb(219, 213, 213);
-}
-
-.form button {
-  align-self: flex-end;
-  padding: 8px;
-  outline: 0;
-  border: 0;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: #6d28d9;
-  color: #e9d5ff;
+  align-self: center;
+  font-family: inherit;
+  color: #717171;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
   cursor: pointer;
+  border-radius: 6px;
 }
+
+.form-container .form-submit-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
 
 
 
@@ -100,20 +150,20 @@ nav ul {
   flex-direction: row;
   justify-content: space-evenly;
   font-size: 140%;
-  background: linear-gradient(90deg, #3b0764, #6d28d9);
+  background: linear-gradient(90deg, #6A1B1B, #981313);
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   padding: 0.8em 0;
 }
 
 nav a {
   text-decoration: none;
-  color: #e9d5ff;
+  color: #F4E1D2;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 nav a:hover {
-  color: #f8d66d;
+  color: #D4AF37;
   text-shadow: 0 0 10px #00f0ff;
 }
 
@@ -127,7 +177,7 @@ nav a:hover {
     justify-content: space-evenly;  
     flex-wrap: wrap;
     font-size: 150%;
-    background: linear-gradient(90deg, #3b0764, #6d28d9);
+    background: linear-gradient(90deg, #6A1B1B, #981313);
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     background-color: black;
   }
@@ -151,10 +201,10 @@ nav a:hover {
 
 
 .boutonsJaune {
-  --glow-color: #f8d66d;
+  --glow-color: #D4AF37;
   --glow-spread-color: rgba(248, 214, 109, 0.4);
   --enhanced-glow-color: #fff2b3;
-  --btn-color: #f8d66d;
+  --btn-color: #D4AF37;
 
   border: 0.25em solid var(--glow-color);
   padding: 1em 3em;
@@ -194,7 +244,7 @@ footer {
   align-items: center;
   gap: 40px;
   padding: 20px;
-  background: linear-gradient(90deg, #3b0764, #6d28d9);
+  background: linear-gradient(90deg, #6A1B1B, #981313);
   border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
 

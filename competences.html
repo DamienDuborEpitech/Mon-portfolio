@@ -1,114 +1,129 @@
 <html lang="fr">
-<head>
-    <link href="competences.css" type="text/css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="formations.html">Formations</a></li>
-            <li><a href="competences.html">Compétences</a></li>
-            <li><a href="mesProjets.html">Mes Projets</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="wrapper">
-        <div class="inner" style="--quantity: 10;">
-            <div class="card" style="--index: 0;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
-                <div class="front">
-                    <img src="images/cFlat.png" alt="imageC" class="CarteFace" />
-                </div>
-                <div class="back">
-                    <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
+    <head>
+        <link href="competences.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/.../materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/.../materialize.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="formations.html">Formations</a></li>
+                    <li id="liActuel"><a href="competences.html">Compétences</a></li>
+                    <li><a href="mesProjets.html">Mes Projets</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="wrapper">
+                <div class="inner" style="--quantity: 10;">
+                    <div class="card" style="--index: 0;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
+                        <div class="front">
+                            <img src="images/cFlat.png" alt="imageC" class="CarteFace" />
+                        </div>
+                        <div class="back">
+                            <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
+                        </div>
+                    </div>
+                    <div class="card" style="--index: 1;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
+                        <div class="front">
+                            <img src="images/python.png" alt="imagePython" class="CarteFace" />
+                        </div>
+                        <div class="back">
+                            <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
+                        </div>
+                    </div>
+                    <div class="card" style="--index: 2;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
+                        <div class="front">
+                            <img src="images/javaFlat.png" alt="imageJava" class="CarteFace" />
+                        </div>
+                        <div class="back">
+                            <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
+                        </div>
+                    </div>
+                    <div class="card" style="--index: 3;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
+                        <div class="front">
+                            <img src="images/htmlFlat.png" alt="imagehtml" class="CarteFace" />
+                        </div>
+                        <div class="back">
+                            <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
+                        </div>
+                    </div>
+                    <div class="card" style="--index: 4;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
+                        <div class="front">
+                            <img src="images/githubFlat.png" alt="imageGit" class="CarteFace" />
+                        </div>
+                        <div class="back">
+                            <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
+                        </div>
+                    </div>
+                    <div class="card" style="--index: 5;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
+                        <div class="front">
+                            <img src="images/logoAssembleur.jpg" alt="imageAssembleur" class="CarteFace" />
+                        </div>
+                        <div class="back">
+                            <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
+                        </div>
+                    </div>
+                    <div class="card" style="--index: 6;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
+                        <div class="front">
+                            <img src="images/logoOcaml.png" alt="imageOcaml" class="CarteFace" />
+                        </div>
+                        <div class="back">
+                            <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
+                        </div>
+                    </div>
+                    <div class="card" style="--index: 7;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
+                        <div class="front">
+                            <img src="images/js.png" alt="imageJS" class="CarteFace" />
+                        </div>
+                        <div class="back">
+                            <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
+                        </div>
+                    </div>
+                    <div class="card" style="--index: 8;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
+                        <div class="front">
+                            <img src="images/css-3.png" alt="imageCSS" class="CarteFace" />
+                        </div>
+                        <div class="back">
+                            <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
+                        </div>
+                    </div>
+                    <div class="card" style="--index: 9;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
+                        <div class="front">
+                            <img src="images/php.png" alt="imagePHP" class="CarteFace" />
+                        </div>
+                        <div class="back">
+                            <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
+                        </div>
+                    </div>
+                    <!-- répéter pour toutes les cartes -->
                 </div>
             </div>
-            <div class="card" style="--index: 1;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
-                <div class="front">
-                    <img src="images/python.png" alt="imagePython" class="CarteFace" />
-                </div>
-                <div class="back">
-                    <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
-                </div>
+        </main>
+        <footer>
+            <div id="DivFooter">
+                <button id="BoutonPlay" class="boutonsFooter">Play</button>
+                <button id="BoutonPause" class="boutonsFooter">Pause</button>
+                <button onclick="window.location.href='formations.html'" class="boutonsFooter">Précédent</button>
+                <button onclick="window.location.href='Contact.html'" class="boutonsFooter">Continuer</button>
+                
             </div>
-            <div class="card" style="--index: 2;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
-                <div class="front">
-                    <img src="images/javaFlat.png" alt="imageJava" class="CarteFace" />
-                </div>
-                <div class="back">
-                    <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
-                </div>
-            </div>
-            <div class="card" style="--index: 3;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
-                <div class="front">
-                    <img src="images/htmlFlat.png" alt="imagehtml" class="CarteFace" />
-                </div>
-                <div class="back">
-                    <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
-                </div>
-            </div>
-            <div class="card" style="--index: 4;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
-                <div class="front">
-                    <img src="images/githubFlat.png" alt="imageGit" class="CarteFace" />
-                </div>
-                <div class="back">
-                    <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
-                </div>
-            </div>
-            <div class="card" style="--index: 5;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
-                <div class="front">
-                    <img src="images/logoAssembleur.jpg" alt="imageAssembleur" class="CarteFace" />
-                </div>
-                <div class="back">
-                    <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
-                </div>
-            </div>
-            <div class="card" style="--index: 6;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
-                <div class="front">
-                    <img src="images/logoOcaml.png" alt="imageOcaml" class="CarteFace" />
-                </div>
-                <div class="back">
-                    <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
-                </div>
-            </div>
-            <div class="card" style="--index: 7;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
-                <div class="front">
-                    <img src="images/js.png" alt="imageJS" class="CarteFace" />
-                </div>
-                <div class="back">
-                    <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
-                </div>
-            </div>
-            <div class="card" style="--index: 8;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
-                <div class="front">
-                    <img src="images/css-3.png" alt="imageCSS" class="CarteFace" />
-                </div>
-                <div class="back">
-                    <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
-                </div>
-            </div>
-            <div class="card" style="--index: 9;--color-front: 255, 255, 255; --color-back: 255, 255, 255;">
-                <div class="front">
-                    <img src="images/php.png" alt="imagePHP" class="CarteFace" />
-                </div>
-                <div class="back">
-                    <img src="images/DosCarte.png" alt="imageCarte" id="imageCarte" />
-                </div>
-            </div>
-            <!-- répéter pour toutes les cartes -->
-        </div>
-    </div>
-    <div id="boxButton">
-        <button onclick="window.location.href='mesProjets.html'" class="boutonsJaune">Continuer</button>
-    </div>
-    <br>
-</body>
-<footer>
-        <a href="https://github.com/DamienDuborEpitech">
-            <img src="images/github Noir.png" alt="imageGit" />
-        </a>
-        <a href="https://www.linkedin.com/in/damien-dubor-4b31302a9/?trk=opento_sprofile_topcard">
-            <img src="images/linkedinNoir.png" alt="imageLinkedin"/>
-        </a>
-    </footer>
+            <div id="ReseauxFooter">
+                <a href="https://github.com/DamienDuborEpitech">
+                    <img src="images/github (1).png" alt="imageGit" class="logosFooters"/>
+                </a>
+                <img src="images/PhotosProfilLinkedin.jpg" alt="Ma photos" class="circle responsive-img photo-profil">
+                <a href="https://www.linkedin.com/in/damien-dubor-4b31302a9/?trk=opento_sprofile_topcard">
+                    <img src="images/Linkegin.png" alt="imageLinkedin" class="logosFooters"/>
+                </a>
+            </div>    
+        </footer>
+    </body>
+
 </html>

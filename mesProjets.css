@@ -1,4 +1,4 @@
-body {
+/*body {
   width: 100%;
   height: 100%;
 
@@ -21,7 +21,12 @@ body {
     );
   background-size: var(--gap) var(--gap);
   z-index: 1;
+}*/
+
+body{
+  background-color: #F4E1D2;
 }
+
 
 
 /*NAV : */
@@ -32,20 +37,20 @@ nav ul {
   flex-direction: row;
   justify-content: space-evenly;
   font-size: 140%;
-  background: linear-gradient(90deg, #3b0764, #6d28d9);
+  background: linear-gradient(90deg, #6A1B1B, #981313);
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   padding: 0.8em 0;
 }
 
 nav a {
   text-decoration: none;
-  color: #e9d5ff;
+  color: #F4E1D2;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 nav a:hover {
-  color: #f8d66d;
+  color: #D4AF37;
   text-shadow: 0 0 10px #00f0ff;
 }
 
@@ -59,7 +64,7 @@ nav a:hover {
     justify-content: space-evenly;  
     flex-wrap: wrap;
     font-size: 150%;
-    background: linear-gradient(90deg, #3b0764, #6d28d9);
+    background: linear-gradient(90deg, #6A1B1B, #981313);
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     background-color: black;
   }
@@ -71,15 +76,15 @@ nav a:hover {
 #boxButton{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 
 .boutonsJaune {
-  --glow-color: #f8d66d;
+  --glow-color: #D4AF37;
   --glow-spread-color: rgba(248, 214, 109, 0.4);
   --enhanced-glow-color: #fff2b3;
-  --btn-color: #f8d66d;
+  --btn-color: #D4AF37;
 
   border: 0.25em solid var(--glow-color);
   padding: 1em 3em;
@@ -103,7 +108,6 @@ nav a:hover {
   color: #1a1a1a;
   transform: scale(1.05);
 }
-
 
 /*Fin bouton or*/
 
@@ -200,7 +204,7 @@ h2{
   justify-content: center;
   text-align: center;
   gap: 10px;
-  background: linear-gradient(-45deg, #3b0764 0%, #6d28d9 100% );
+  background: linear-gradient(-45deg, #6A1B1B, #981313 100% );
   color: #e8e8e8;
   padding: 20px;
   line-height: 1.5;
@@ -238,7 +242,7 @@ footer {
   align-items: center;
   gap: 40px;
   padding: 20px;
-  background: linear-gradient(90deg, #3b0764, #6d28d9);
+  background: linear-gradient(90deg, #6A1B1B, #981313);
   border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
 

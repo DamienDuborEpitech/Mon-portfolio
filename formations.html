@@ -2,52 +2,66 @@
     <head>
         <link href="formations.css" type="text/css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </head>
 
     <body id="bodyIndex">
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="formations.html">Formations</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="mesProjets.html">Mes Projets</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <!-- From Uiverse.io by kamehame-ha --> 
-        <div class="cards">
-            <div class="card RiveGauche">
-                <img src="images/lyceeRiveGauche.png" alt="RiveGauche" id="imgRG"/>
-            </div>
-    
-    
-            <div class="card PaulSab">
-                <img src="images/Logo_UT3.jpg" alt="imagePaulSab" class="imgCard"/>           
-            </div>
-    
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li id="liActuel"><a href="formations.html">Formations</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="mesProjets.html">Mes Projets</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
         
-            <div class="card Epitech">
-                <img src="images/Epitech.png" alt="imageEpitech" class="imgCard"/>
+        <main>
+            <!-- From Uiverse.io by kamehame-ha --> 
+            <div class="cards">
+                <div class="card RiveGauche">
+                    <img src="images/lyceeRiveGauche.png" alt="RiveGauche" id="imgRG"/>
+                </div>
+        
+        
+                <div class="card PaulSab">
+                    <img src="images/Logo_UT3.jpg" alt="imagePaulSab" class="imgCard"/>           
+                </div>
+        
+            
+                <div class="card Epitech">
+                    <img src="images/Epitech.png" alt="imageEpitech" class="imgCard"/>
+                </div>
+        
             </div>
-     
-        </div>
-    
-    
-        <br>
-        <div id="boxButton">
-            <button onclick="window.location.href='competences.html'" class="boutonsJaune">Continuer</button>
-        </div>
-        <br>
+        </main>
+
+        <footer>
+            
+            <div id="DivFooter">
+                <button id="BoutonPlay" class="boutonsFooter">Play</button>
+                <button id="BoutonPause" class="boutonsFooter">Pause</button>
+                <button onclick="window.location.href='index.html'" class="boutonsFooter">Précédent</button>
+                <button onclick="window.location.href='competences.html'" class="boutonsFooter">Continuer</button>
+                
+            </div>
+            <div id="ReseauxFooter">
+                <a href="https://github.com/DamienDuborEpitech">
+                    <img src="images/github (1).png" alt="imageGit" class="logosFooters"/>
+                </a>
+                <img src="images/PhotosProfilLinkedin.jpg" alt="Ma photos" class="circle responsive-img photo-profil">
+                <a href="https://www.linkedin.com/in/damien-dubor-4b31302a9/?trk=opento_sprofile_topcard">
+                    <img src="images/Linkegin.png" alt="imageLinkedin" class="logosFooters"/>
+                </a>
+            </div>
+            
+        </footer>
 
     </body>
 
-    <footer>
-        <a href="https://github.com/DamienDuborEpitech">
-            <img src="images/github Noir.png" alt="imageGit" />
-        </a>
-        <a href="https://www.linkedin.com/in/damien-dubor-4b31302a9/?trk=opento_sprofile_topcard">
-            <img src="images/linkedinNoir.png" alt="imageLinkedin"/>
-        </a>
-    </footer>
+    
 </html>
