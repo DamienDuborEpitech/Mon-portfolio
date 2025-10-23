@@ -66,9 +66,10 @@ nav a {
 
 main {
   flex: 1;
-  padding-top: 60px;
+  padding-top: 80px;
   background-color: #F4E1D2;
-  color: #111111;
+  color: #3E2F2F;
+  font-family: 'Lato', sans-serif;
 }
 
 /* From Uiverse.io by kamehame-ha */ 

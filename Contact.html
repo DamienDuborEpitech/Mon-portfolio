@@ -2,48 +2,70 @@
     <head>
         <link href="Contact.css" type="text/css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
 
-    <body id="bodyIndex">
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="formations.html">Formations</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="mesProjets.html">Mes Projets</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="formations.html">Formations</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="mesProjets.html">Mes Projets</a></li>
+                    <li id="liActuel"><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <div id="boxForm">
-            <div class="form-container">
-                <form class="form">
-                    <div class="form-group">
-                    <label for="nom">Votre nom</label>
-                    <input type="text" id="nom" name="nom" required="">
-                    </div>
-                    <div class="form-group">
-                    <label for="email">Votre email</label>
-                    <input type="text" id="email" name="email" required="">
-                    </div>
-                    <div class="form-group">
-                    <label for="message">Votre message</label>
-                    <textarea name="textarea" id="message" rows="10" cols="50" required=""></textarea>
-                    </div>
-                    <button type="button" class="form-submit-btn" onclick="sendMail()">Envoyer</button>
+        <main>
+            <div id="boxForm">
+                <div class="form-container">
+                    <form class="form">
+                        <div class="form-group">
+                        <label for="nom">Votre nom</label>
+                        <input type="text" id="nom" name="nom" required="">
+                        </div>
+                        <div class="form-group">
+                        <label for="email">Votre email</label>
+                        <input type="text" id="email" name="email" required="">
+                        </div>
+                        <div class="form-group">
+                        <label for="message">Votre message</label>
+                        <textarea name="textarea" id="message" rows="10" cols="50" required=""></textarea>
+                        </div>
+                        <button type="button" class="form-submit-btn" onclick="sendMail()">Envoyer</button>
 
-                </form>
+                    </form>
+                </div>
             </div>
-        </div>
-        
-        
+        </main>
 
-        <br>
-        <br>
-        <div id="boxButton">
-            <button onclick="window.location.href='mesProjets.html'" class="boutonsJaune">Précédent</button>
-        </div>
+        <audio id="monAudio">
+            <source src="musiques/Paul Pitman - Moonlight Sonata, Op. 27 No. 2 - I. Adagio sostenuto.mp3" type="audio/mpeg" />
+        </audio>
 
+        <footer>
+            
+            <div id="DivFooter">
+                <button id="BoutonPlay" class="boutonsFooter">Play</button>
+                <button id="BoutonPause" class="boutonsFooter">Pause</button>
+                <button onclick="window.location.href='mesProjets.html'" class="boutonsFooter">Précédent</button>
+                <button onclick="window.location.href='index.html'" class="boutonsFooter">Continuer</button>
+                
+            </div>
+            <div id="ReseauxFooter">
+                <a href="https://github.com/DamienDuborEpitech">
+                    <img src="images/github (1).png" alt="imageGit" class="logosFooters"/>
+                </a>
+                <img src="images/PhotosProfilLinkedin.jpg" alt="Ma photos" class="circle responsive-img photo-profil">
+                <a href="https://www.linkedin.com/in/damien-dubor-4b31302a9/?trk=opento_sprofile_topcard">
+                    <img src="images/Linkegin.png" alt="imageLinkedin" class="logosFooters"/>
+                </a>
+            </div>
+            <script src="musique.js"></script>
+        </footer>
+        
         <script src="contact.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <script type="text/javascript">
@@ -56,12 +78,4 @@
 
     </body>
 
-    <footer>
-        <a href="https://github.com/DamienDuborEpitech">
-            <img src="images/github Noir.png" alt="imageGit" />
-        </a>
-        <a href="https://www.linkedin.com/in/damien-dubor-4b31302a9/?trk=opento_sprofile_topcard">
-            <img src="images/linkedinNoir.png" alt="imageLinkedin"/>
-        </a>
-    </footer>
 </html>

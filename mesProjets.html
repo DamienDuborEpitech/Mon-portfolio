@@ -2,87 +2,125 @@
     <head>
         <link href="mesProjets.css" type="text/css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
     </head>
 
-    <body id="bodyIndex">
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="formations.html">Formations</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="mesProjets.html">Mes Projets</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="formations.html">Formations</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li id="liActuel"><a href="mesProjets.html">Mes Projets</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            
+            <div id ="boxCard">
+                <div id="carteEtTexte">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="front-content">
+                                <img src="images/CvWeb.jpg" alt="imgCVWeb" class="imgProjet"/>
+                            </div>
+                            <div class="content">
+                                <br>
+                                <p class="heading">CV Web</p>
+                                <p>Langages : HTML/CSS</p>  
+                                <br><br> 
+                                </p>
+                            </div>
+                        </div>
 
-        <div id ="boxCard">
-            <div class="card-container">
-                <div class="card">
-                    <div class="front-content">
-                        <img src="images/CvWeb.jpg" alt="imgCVWeb" class="imgProjet"/>
                     </div>
-                    <div class="content">
-                        <br>
-                        <p class="heading">CV Web</p>
-                        <p>Langages : HTML/CSS</p>  
-                        <br><br> 
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="card-container">
-                <div class="card">
-                    <div class="front-content">
-                        <img src="images/Joaboard.jpg" alt="imgJoabBoard" class="imgProjet"/>
-                    </div>
-                    <div class="content">
-                        <p class="heading">Jobboard</p>
-                        <p>Langages : HTML/CSS/JS/SQL</p>
-                        <br><br> 
-                        
+                    <div class="texte-projet">
+                        <h2>CV Web</h2>
+                        <p>Langages : HTML/CSS</p>
+                        <p>Petit site de présentation de mon parcours et de mes compétences, réalisé pour m’initier au développement web.</p>
                     </div>
                 </div>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                    <div class="front-content">
-                        <img src="images/Pendu.jpg" alt="jeuxPendu" class="imgProjet"/>
+                
+
+
+                <div id="carteEtTexte">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="front-content">
+                                <img src="images/Joaboard.jpg" alt="imgJoabBoard" class="imgProjet"/>
+                            </div>
+                            <div class="content">
+                                <p class="heading">Jobboard</p>
+                                <p>Langages : HTML/CSS/JS/SQL</p>
+                                <br><br> 
+                                
+                            </div>
+                        </div>
                     </div>
-                    <div class="content">
-                        <p class="heading">Le jeux du pendu</p>
-                        <p>
-                        Langage : Python
-                        <br> <br> 
-                        </p>
+                    <div class="texte-projet">
+                        <h2>CV Web</h2>
+                        <p>Langages : HTML/CSS</p>
+                        <p>Petit site de présentation de mon parcours et de mes compétences, réalisé pour m’initier au développement web.</p>
                     </div>
                 </div>
+                <div id="carteEtTexte">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="front-content">
+                                <img src="images/Pendu.jpg" alt="jeuxPendu" class="imgProjet"/>
+                            </div>
+                            <div class="content">
+                                <p class="heading">Le jeux du pendu</p>
+                                <p>
+                                Langage : Python
+                                <br> <br> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="texte-projet">
+                        <h2>CV Web</h2>
+                        <p>Langages : HTML/CSS</p>
+                        <p>Petit site de présentation de mon parcours et de mes compétences, réalisé pour m’initier au développement web.</p>
+                    </div>
+                </div>
+
             </div>
-
-        </div>
-
+        </main>
+        <audio id="monAudio">
+            <source src="musiques/Meydn-SynthwaveVibe.mp3" type="audio/mpeg" />
+        </audio>
      
-     
+        <footer>
+            <div id="DivFooter">
+                <button id="BoutonPlay" class="boutonsFooter">Play</button>
+                <button id="BoutonPause" class="boutonsFooter">Pause</button>
+                <button onclick="window.location.href='competences.html'" class="boutonsFooter">Précédent</button>
+                <button onclick="window.location.href='Contact.html'" class="boutonsFooter">Continuer</button>
+                
+            </div>
+            <div id="ReseauxFooter">
+                <a href="https://github.com/DamienDuborEpitech">
+                    <img src="images/github (1).png" alt="imageGit" class="logosFooters"/>
+                </a>
+                <img src="images/PhotosProfilLinkedin.jpg" alt="Ma photos" class="circle responsive-img photo-profil">
+                <a href="https://www.linkedin.com/in/damien-dubor-4b31302a9/?trk=opento_sprofile_topcard">
+                    <img src="images/Linkegin.png" alt="imageLinkedin" class="logosFooters"/>
+                </a>
+            </div>
+            <script src="musique.js"></script>
+        </footer>
 
-        <div id="boxButton">
-            <button onclick="window.location.href='competences.html'" class="boutonsJaune">Précédent</button>
-            <button onclick="window.location.href='Contact.html'" class="boutonsJaune">Continuer</button>
-        </div>
-        <br>
+        
 
         
         
         
     </body>
 
-    <footer>
-        <a href="https://github.com/DamienDuborEpitech">
-            <img src="images/github Noir.png" alt="imageGit" />
-        </a>
-        <a href="https://www.linkedin.com/in/damien-dubor-4b31302a9/?trk=opento_sprofile_topcard">
-            <img src="images/linkedinNoir.png" alt="imageLinkedin"/>
-        </a>
-    </footer>
+    
 </html>
