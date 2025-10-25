@@ -163,13 +163,13 @@ main {
     }
     .imgCard{
       text-align: center;
-      width: 25%;
+      width: 70%;
       height:auto;
     }
 
   #imgRg{
     text-align: center;
-    width: 15%;
+    width: 30%;
     height:auto;
   }
 
@@ -276,3 +276,71 @@ footer {
 }
 
 /*FIN FOOTER */
+
+
+/*DARK THEME : */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #E0E0E0;
+  }
+
+  header, nav ul {
+    background: #1F1B1B;
+  }
+
+  #liActuel {
+    background: #442B2B;
+  }
+
+  nav a {
+    color: #F4E1D2;
+  }
+
+  main {
+    background-color: #1E1E1E;
+    color: #F4E1D2;
+  }
+
+  
+
+  footer {
+    background: #1F1B1B;
+  }
+
+  #DivFooter {
+    background: #2A2222;
+  }
+
+  #ReseauxFooter {
+    background: #111;
+  }
+
+  .boutonsFooter {
+    background-color: #2C2C2C;
+    color: #F4E1D2;
+    border-color: #555;
+  }
+
+  .boutonsFooter:hover {
+    background-color: #6A1B1B; 
+  
+  }
+
+  .photo-profil {
+    border-color: #A76565;
+  }
+
+  li:hover {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  }
+  img.logosFooters {
+    filter: invert(1) brightness(1.8);
+  }
+
+
+}
+
+
+/*FIN DARK THEME*/
