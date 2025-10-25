@@ -1,14 +1,11 @@
-<!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="UTF-8">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="index.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <body>
+    </head>
 
+    <body>
         <header>
             <nav>
                 <ul>
@@ -16,12 +13,55 @@
                     <li><a href="formations.html">Formations</a></li>
                     <li><a href="competences.html">Compétences</a></li>
                     <li><a href="mesProjets.html">Mes Projets</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="CV.html">CV</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
+            
+            <div id="boxTexte">
+                <h1>DUBOR DAMIEN</h1>
+                <p>Bonjour ! Je suis Damien Dubor, étudiant en informatique en troisième année à Epitech. <br>Je recherche actuellement une alternance !</p>
+            </div>
+        
+            <div id="BoxContact">
+                <div class="form-container">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="nom">Votre nom</label>
+                            <input type="text" id="nom" name="nom" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Votre email</label>
+                            <input type="text" id="email" name="email" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Votre message</label>
+                            <textarea name="textarea" id="message" rows="10" cols="50" required=""></textarea>
+                        </div>
+                        <button type="button" class="form-submit-btn" onclick="sendMail()">Envoyer</button>
+                    </form>
+                </div>
+
+
+
+                <div id="InfosContact">
+                    <h1>Infos contact</h1>
+                    <div class="imgEtDescription">
+                        <img src="images/telephone (1).png" alt="imageTel" class="imagesContact"/>
+                        <p>    0782603652</p>
+                    </div>
+                    <div class="imgEtDescription">
+                        <img src="images/courrier.png" alt="imageMail" class="imagesContact"/> 
+                        <p>    damien.dubor@gmail.com</p>
+                    </div>
+                    <div class="imgEtDescription">
+                        <img src="images/localisateur.png" alt="imagelocalisation" class="imagesContact"/>
+                        <p>    Toulouse, Castres</p>
+                    </div>
+                </div>
+            </div>
         
         </main>
 
@@ -32,9 +72,9 @@
         <footer>
             
             <div id="DivFooter">
-                <button id="BoutonPlay" class="boutonsFooter">Play</button>
+                <button id="BoutonPlay" class="boutonsFooter">Jouer</button>
                 <button id="BoutonPause" class="boutonsFooter">Pause</button>
-                <button onclick="window.location.href='Contact.html'" class="boutonsFooter">Précédent</button>
+                <button onclick="window.location.href='CV.html'" class="boutonsFooter">Précédent</button>
                 <button onclick="window.location.href='formations.html'" class="boutonsFooter">Continuer</button>
                 
             </div>
@@ -49,7 +89,17 @@
             </div>
             <script src="musique.js"></script>
         </footer>
-
+        
+        <script src="contact.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "NZdbd4VWv6G7ie_eF",
+                });
+            })();
+        </script>
 
     </body>
+
 </html>

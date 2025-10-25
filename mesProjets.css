@@ -35,6 +35,7 @@ nav ul {
   background: #6A1B1B;
   flex-wrap: wrap;   /*POUR LE RESPONSIVE */
   padding: 0.8em 0;
+  gap:5px;
 }
 
 li {
@@ -63,6 +64,7 @@ nav a {
 
 /*FIN HEADER */
 
+/*DEBUT MAIN : */
 
 main {
   flex: 1;
@@ -72,14 +74,6 @@ main {
   color: #3E2F2F;
   font-family: 'Lato', sans-serif;
 }
-
-
-
-
-
-
-
-
 
 
 #boxCard {
@@ -99,46 +93,22 @@ main {
   justify-content: space-around; 
 }
 
-.imgProjet{
-  width: 600px;
-  height: auto;
-}
-
-
-
-/*IMPORT DE LA CARD https://uiverse.io/gharsh11032000/shy-ape-17 */
 
 .card-container {
   width: 600px;
-  height: auto;
   position: relative;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 
-@media (max-width: 767px) {
-  .imgProjet{
-  width: 300px;
-  height: auto;
-  }
-
-  .card-container {
-    width: 300px;
-    height: auto;
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-  }
-  
-}
-
 .card {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 16 / 9;   
   border-radius: inherit;
+  position: relative;
 }
+
 
 .card .front-content {
   width: 100%;
@@ -146,8 +116,29 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
 }
+
+
+.imgProjet {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     
+  display: block;
+}
+
+
+@media (max-width: 767px) {
+
+  .card-container {
+  width: 95%;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+  
+}
+
 
 .card .front-content p {
   font-size: 32px;
@@ -200,6 +191,88 @@ main {
 }
 
 
+.texte-projet {
+  background: #6A1B1B;
+  color: #F4E1D2;
+  border-radius: 18px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  padding: 25px 30px;
+  width: 40%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.texte-projet:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.texte-projet h2 {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #F4E1D2;
+  display: inline-block;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+}
+
+.texte-projet p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.95;
+  text-align: justify;
+}
+
+.texte-projet {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUpProjet 0.8s ease forwards;
+}
+
+@keyframes fadeUpProjet {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  #carteEtTexte {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .card-container {
+    width: 85%; 
+    padding-top: 20px;
+  }
+
+  .texte-projet {
+    width: 85%; 
+    text-align: center;
+    padding: 20px;
+  }
+
+  .texte-projet h2 {
+    font-size: 1.4rem;
+  }
+
+  .texte-projet p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/*FIN MAIN */
 
 
 /*DEBUT FOOTER : */

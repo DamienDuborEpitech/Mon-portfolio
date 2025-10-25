@@ -35,6 +35,7 @@ nav ul {
   background: #6A1B1B;
   flex-wrap: wrap;   /*POUR LE RESPONSIVE */
   padding: 0.8em 0;
+  gap:5px;
 }
 
 li {
@@ -64,6 +65,9 @@ nav a {
 /*FIN HEADER */
 
 
+
+/*DEBUT MAIN : */
+
 main {
   flex: 1;
   padding-top: 60px;
@@ -71,7 +75,6 @@ main {
   color: #3E2F2F;
   font-family: 'Lato', sans-serif;
 }
-
 
 
 /* Inspiration : From Uiverse.io by ilkhoeri */
@@ -150,27 +153,81 @@ main {
 
 
 .CarteFace{
-    width: 35%;          /* prend toute la largeur de la carte */
+    width: 35%;         
     height: auto;
 }
 
 #imageCarte{
-    width: 100%;          /* prend toute la largeur de la carte */
+    width: 100%;         
     height: auto;
 }
 
-
-#boxTexte{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap:wrap;
-  gap: 30px;
+#boxTexte {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* grille adaptable */
+  gap: 25px;
+  width: 90%;
+  margin: 40px auto;
+  justify-items: center;
+  align-items: stretch;
 }
 
-.zoneDeTexte{
+.zoneDeTexte {
+  background: #6A1B1B;
+  color: #F4E1D2;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  padding: 20px;
   text-align: center;
+  max-width: 320px;
+  min-height: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.15);
 }
+
+.zoneDeTexte:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.zoneDeTexte h3 {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #F4E1D2;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.zoneDeTexte p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #F4E1D2;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.zoneDeTexte {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.zoneDeTexte:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+.zoneDeTexte:nth-child(even) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*FIN MAIN */
 
 
 

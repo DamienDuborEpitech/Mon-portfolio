@@ -5,7 +5,7 @@ const MoinsVite = document.getElementById("MoinsVite");
 
 
 
-/*
+
 let vitesse = 81;
 let i = 0;
 let texte = texteIntro.innerHTML; 
@@ -17,23 +17,16 @@ PlusVite.addEventListener("click",() =>{
       vitesse -=10;  
     }
 });
-*/
+
 /*Plus la val est petite, plus ça va vite */
 
-/*
+
 MoinsVite.addEventListener("click",() =>{
     vitesse +=10;
 }); 
 
-*/
 
-BoutonPlay.addEventListener("click",() =>{
-  monAudio.play();
-});
 
-BoutonPause.addEventListener("click",() =>{
-  monAudio.pause();
-});
 
 
 function ecrire() {
@@ -55,8 +48,7 @@ function ecrire() {
     setTimeout(ecrire, vitesse);
   }
 }
-/*
+
 texteIntro.innerHTML = ""; 
 
-ecrire();*/
-
+ecrire();

@@ -1,0 +1,83 @@
+<html lang="fr">
+    <head>
+        <link href="CV.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="formations.html">Formations</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="mesProjets.html">Mes Projets</a></li>
+                    <li id="liActuel"><a href="CV.html">CV</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="boxCV">
+                <img src="images/CVDuborDamien_page-0001.jpg" alt="Mon CV" id="monCv">
+                <a href="fichiers/CVDuborDamien.pdf" download>
+                    <button id="boutonTelecharger">Télécharger le PDF</button>
+                </a>
+            </div>
+        
+            <div id="sousBoite">
+                <p id="texteIntro">Madame, Monsieur,<br><br>
+                Actuellement étudiant en pré-MSc (3ème année) à Epitech, après une Licence 2 Informatique à Paul Sabatier, je vous fais part de ma volonté d'intégrer votre entreprise en alternance à partir de janvier 2026 jusqu'en juin 2028 au plus tard.<br>
+                Au fil de ma formation, j'ai acquis de solides compétences en développement ainsi que de bonnes bases théoriques, me permettant de concevoir un code rigoureux, fiable et maintenable.<br>
+                Je pense être appliqué, déterminé et curieux. J'apprécie particulièrement le travail en groupe, où je sais m'impliquer tout en écoutant et en collaborant efficacement avec les autres. Mon sens de l'organisation et mon envie d'apprendre en continu sont des atouts que je souhaite mettre à votre service.
+                <br>Je vous remercie par avance pour l'attention portée à ma candidature et reste à votre disposition pour tout entretien ou information complémentaire. <br><br>
+                Respectueusement,<br><br>
+
+
+                Damien DUBOR
+                </p>
+            </div>
+            <div id="BoxBoutons">
+                <div id="boxBoutonPlusVite">
+                    <button class="boutonsVitesse" id="PlusVite">Plus vite</button>
+                </div>
+                <div id="boxBoutonMoinsVite">
+                    <button class="boutonsVitesse" id="MoinsVite">Moins vite</button>
+                </div>
+            </div>
+
+
+
+        </main>
+
+        <audio id="monAudio">
+            <source src="musiques/Paul Pitman - Moonlight Sonata, Op. 27 No. 2 - I. Adagio sostenuto.mp3" type="audio/mpeg" />
+        </audio>
+
+        <footer>
+            
+            <div id="DivFooter">
+                <button id="BoutonPlay" class="boutonsFooter">Jouer</button>
+                <button id="BoutonPause" class="boutonsFooter">Pause</button>
+                <button onclick="window.location.href='mesProjets.html'" class="boutonsFooter">Précédent</button>
+                <button onclick="window.location.href='index.html'" class="boutonsFooter">Continuer</button>
+                
+            </div>
+            <div id="ReseauxFooter">
+                <a href="https://github.com/DamienDuborEpitech">
+                    <img src="images/github (1).png" alt="imageGit" class="logosFooters"/>
+                </a>
+                <img src="images/PhotosProfilLinkedin.jpg" alt="Ma photos" class="circle responsive-img photo-profil">
+                <a href="https://www.linkedin.com/in/damien-dubor-4b31302a9/?trk=opento_sprofile_topcard">
+                    <img src="images/Linkegin.png" alt="imageLinkedin" class="logosFooters"/>
+                </a>
+            </div>
+            <script src="musique.js"></script>
+        </footer>
+        
+        <script src="cv.js"></script>
+
+    </body>
+
+</html>

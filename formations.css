@@ -35,6 +35,7 @@ nav ul {
   background: #6A1B1B;
   flex-wrap: wrap;   /*POUR LE RESPONSIVE */
   padding: 0.8em 0;
+  gap:5px;
 }
 
 li {
@@ -63,6 +64,8 @@ nav a {
 
 /*FIN HEADER */
 
+
+/*DEBUT MAIN : */
 
 main {
   flex: 1;
@@ -174,7 +177,7 @@ main {
 
 }
 
-/*FIN CARTES /*
+/*FIN MAIN */
 
 
 
