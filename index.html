@@ -5,10 +5,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
         <title>Damien Dubor - Portfolio Epitech</title>
         <meta name="description" content="Portfolio de Damien Dubor, étudiant à Epitech, développeur web et passionné d'informatique.">
+        <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+        <meta name="theme-color" content="#F4E1D2" media="(prefers-color-scheme: light)">
         <script>
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            (function() {
+                const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+                if (darkQuery.matches) {
+                document.documentElement.style.backgroundColor = '#121212';
+                document.documentElement.style.color = '#E0E0E0';
+                // Si tu veux, tu peux aussi ajouter directement class="dark"
                 document.documentElement.classList.add('dark');
-            }
+                }
+            })();
         </script>
     </head>
 
